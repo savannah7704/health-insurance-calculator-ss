@@ -51,6 +51,33 @@ elif roundedBmi > 29.9:
     print("The customer's BMI falls into the obese category.")
     points = points + 75
     print("Points: ", points)
+
+question4 = str(input("What is the customer's systolic blood pressure?"))
+answer4 = int(question4)
+print(question4)
+question5 = str(input("What is the customer's diastolic blood pressure?"))
+answer5 = int(question5)
+print(question5)
+
+if answer4 < 120 and answer5 < 80:
+    print("The customer's blood pressure is in the normal category.")
+    points = points
+    print("Points: ", points)
+elif answer4 >= 120 and answer4 <= 129 and answer5 < 80:
+    print("The customer's blood pressure is in the elevated category.")
+    points = points + 15
+    print("Points: ", points)
+elif answer4 >= 130 and answer4 <= 139 or answer5 >= 80 and answer5 <= 89:
+    print("The customer's blood pressure is in the stage 1 category.")
+    points = points + 30
+    print("Points: ", points)
+elif answer4 >= 140 and answer4 < 180 or answer5 >= 90 and answer5 < 120:
+    print("The customer's blood pressure is in the stage 2 category.")
+    points = points + 75
+    print("Points: ", points)
+elif answer4 >= 180 or answer5 >= 120:
+    print("The customer's blood pressure is in the crisis range.")
+    points = points + 100
+    print("Points: ", points)
     
-
-
+#To do: ask about history of family diseases and calculate total score
