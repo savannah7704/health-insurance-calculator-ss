@@ -81,3 +81,46 @@ elif answer4 >= 180 or answer5 >= 120:
     print("Points: ", points)
     
 #To do: ask about history of family diseases and calculate total score
+
+question6 = str(input("Does the customer have a family history of diabetes?"))
+answer6 = str(question6)
+print(question6)
+
+if answer6 == "yes" or answer6 == "Yes" or answer6 == "YES" or answer6 == "y" or answer6 == "Y":
+    points = points + 10
+    print("Points: ", points)
+elif answer6 == "no" or answer6 == "No" or answer6 == "NO" or answer6 == "n" or answer6 == "N":
+    points = points
+    print("Points: ", points)
+
+question7 = str(input("Does the customer have a family history of cancer?"))
+answer7 = str(question7)
+print(question7)
+
+if answer7 == "yes" or answer7 == "Yes" or answer7 == "YES" or answer7 == "y" or answer7 == "Y":
+    points = points + 10
+    print("Points: ", points)
+elif answer7 == "no" or answer7 == "No" or answer7 == "NO" or answer7 == "n" or answer7 == "N":
+    points = points
+    print("Points: ", points)
+
+question8 = str(input("Does the customer have a family history of Alzheimer’s?"))
+answer8 = str(question8)
+print(question8)
+
+if answer8 == "yes" or answer8 == "Yes" or answer8 == "YES" or answer8 == "y" or answer8 == "Y":
+    points = points + 10
+    print("Points: ", points)
+elif answer8 == "no" or answer8 == "No" or answer8 == "NO" or answer8 == "n" or answer8 == "N":
+    points = points
+    print("Points: ", points)
+    
+print("Total points: ", points)
+if points <= 20:
+    print("Based on the responses, the customer is low risk.")
+elif points <= 50:
+    print("Based on the responses, the customer is moderate risk.")
+elif points <= 75:
+    print("Based on the responses, the customer is high risk.")
+elif points > 75:
+    print("Based on the responses, the customer is uninsurable.")
