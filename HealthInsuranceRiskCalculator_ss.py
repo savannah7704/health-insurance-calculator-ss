@@ -11,6 +11,14 @@ question1 = str(input("What is the customer's age?"))
 answer1 = int(question1)
 
 print (question1)
+
+if answer1.isdigit():
+    print("")
+
+    answer1 = int(question1)
+else:
+    print("Please enter the customer's age with a number.")
+
 if answer1 < 30:
     points = points
     print("Points: ", points)
